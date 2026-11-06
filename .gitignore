@@ -24,5 +24,9 @@ logs/
 .DS_Store
 Thumbs.db
 
+# ===== Visual Studio（同伴的 C++ 项目）=====
+.vs/
+*.sln
+
 # ===== 备份与中间产物 =====
 *.bak
