@@ -35,7 +35,11 @@ h1,h2{
     color:#1d4ed8;
     text-decoration:underline;
 }
-.form-box lable{
+.form-box{
+    display:flex;
+    flex-direction:column;
+}
+.form-box label{
     display:block;
     margin:16px 0 8px;
     font-weight:500;
@@ -43,27 +47,31 @@ h1,h2{
 }
 select,texttarea{
     width:100%;
-    padding:12px 14px;
+    padding:10px 12px;
     border:1px solid #d1d5db;
-    border-radius:10px;
-    font-size:15px;
+    border-radius:6px;
+    font-size:14px;
     transition:all 0.2s;
     outline:none;
 }
+textarea{
+    height:190px;
+}
 select:focus,textarea:focus{
     border-color:#2563eb;
-    box-shadow:0 0 0 3px rgba(37,99,235,0.15);
+    box-shadow:0 0 3px rgba(37,99,235,0.15);
 }
 button{
-    margin-top:20px;
-    padding:11px 26px;
+    margin-top:12px;
+    padding:8px 20px;
     border:none;
     background:#2563eb;
     color:white;
-    border-radius:10px;
-    font-size:16px;
+    border-radius:6px;
+    font-size:14px;
     cursor:pointer;
     transition:all 0.2s;
+    align-self:center;
 }
 button:hover{
     background:#1d4ed8;
@@ -71,7 +79,7 @@ button:hover{
     box-shadow:0 4px 12px rgba(37,99,235,0.3);
 }
 button:active{
-    transform:translateY(0);
+    transform:translateY(1px);
 }
 .result-card{
     margin-top:28px;
@@ -110,7 +118,6 @@ button:active{
     }
     .game-box{
         width:320px;
-        height:320px;
+        height:320px; 
     }
 }
-
