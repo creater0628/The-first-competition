@@ -20,7 +20,7 @@ app.use('/users', usersRouter);
 app.use('/resumes', resumesRouter);
 app.use('/api/ai', aiRouter);
 app.use('/api/delta', deltaRouter);
-app.listen(3000, () => {
-    console.log('服务器运行在http://localhost:3000');
+app.listen(3000, '0.0.0.0', () => {
+    console.log('服务器运行在http://0.0.0.0:3000');
 });
 module.exports = app;
